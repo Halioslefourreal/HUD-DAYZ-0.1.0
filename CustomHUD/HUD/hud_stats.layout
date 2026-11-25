@@ -1,0 +1,233 @@
+// Enfusion layout format (NOT xml) - see DayZ modding wiki for syntax
+FrameWidgetClass CustomHudRoot
+{
+	position 0 0
+	hexactpos 0
+	vexactpos 0
+	size 1 1
+	hexactsize 0
+	vexactsize 0
+	ignorepointer 1
+	priority 500
+	{
+		// Panneau cote droit, ancre bas-droite, position proportionnelle
+		FrameWidgetClass CustomHudPanel
+		{
+			position 0.97 0.82
+			hexactpos 0
+			vexactpos 0
+			halign right_ref
+			valign bottom_ref
+			size 280 220
+			hexactsize 1
+			vexactsize 1
+			ignorepointer 1
+			{
+				PanelWidgetClass CustomHudBackground
+				{
+					position 0 0
+					hexactpos 0
+					vexactpos 0
+					size 1 1
+					hexactsize 0
+					vexactsize 0
+					color 0 0 0 0.55
+					style ColorablePanel
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudTitle
+				{
+					position 10 8
+					hexactpos 1
+					vexactpos 1
+					size 260 22
+					hexactsize 1
+					vexactsize 1
+					text "SURVIE"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" left
+					"text valign" center
+					color 0.79 0.71 0.48 0.9
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudHealthLabel
+				{
+					position 10 45
+					hexactpos 1
+					vexactpos 1
+					size 120 18
+					hexactsize 1
+					vexactsize 1
+					text "Santé"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" left
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudHealthValue
+				{
+					position 130 45
+					hexactpos 1
+					vexactpos 1
+					size 140 18
+					hexactsize 1
+					vexactsize 1
+					text "-- %"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" right
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				ProgressBarWidgetClass CustomHudHealthBar
+				{
+					position 10 68
+					hexactpos 1
+					vexactpos 1
+					size 260 10
+					hexactsize 1
+					vexactsize 1
+					color 0.75 0.1 0.1 1
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudBloodLabel
+				{
+					position 10 88
+					hexactpos 1
+					vexactpos 1
+					size 120 18
+					hexactsize 1
+					vexactsize 1
+					text "Sang"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" left
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudBloodValue
+				{
+					position 130 88
+					hexactpos 1
+					vexactpos 1
+					size 140 18
+					hexactsize 1
+					vexactsize 1
+					text "-- %"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" right
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				ProgressBarWidgetClass CustomHudBloodBar
+				{
+					position 10 111
+					hexactpos 1
+					vexactpos 1
+					size 260 10
+					hexactsize 1
+					vexactsize 1
+					color 0.6 0.05 0.05 1
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudWaterLabel
+				{
+					position 10 131
+					hexactpos 1
+					vexactpos 1
+					size 120 18
+					hexactsize 1
+					vexactsize 1
+					text "Eau"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" left
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudWaterValue
+				{
+					position 130 131
+					hexactpos 1
+					vexactpos 1
+					size 140 18
+					hexactsize 1
+					vexactsize 1
+					text "-- %"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" right
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				ProgressBarWidgetClass CustomHudWaterBar
+				{
+					position 10 154
+					hexactpos 1
+					vexactpos 1
+					size 260 10
+					hexactsize 1
+					vexactsize 1
+					color 0.1 0.45 0.8 1
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudEnergyLabel
+				{
+					position 10 174
+					hexactpos 1
+					vexactpos 1
+					size 120 18
+					hexactsize 1
+					vexactsize 1
+					text "Nourriture"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" left
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				TextWidgetClass CustomHudEnergyValue
+				{
+					position 130 174
+					hexactpos 1
+					vexactpos 1
+					size 140 18
+					hexactsize 1
+					vexactsize 1
+					text "-- %"
+					font "gui/fonts/sdf_MetronBook24"
+					"text halign" right
+					"text valign" center
+					color 1 1 1 0.9
+					ignorepointer 1
+				}
+
+				ProgressBarWidgetClass CustomHudEnergyBar
+				{
+					position 10 197
+					hexactpos 1
+					vexactpos 1
+					size 260 10
+					hexactsize 1
+					vexactsize 1
+					color 0.6 0.45 0.1 1
+					ignorepointer 1
+				}
+			}
+		}
+	}
+}
